@@ -106,7 +106,7 @@ def safe_eval(expression: str) -> str:
     try:
         tree = ast.parse(expression, mode="eval")
         _check_ast(tree.body)
-        result = eval(  # noqa: S307 – we validated the AST above
+        result = eval(  # noqa: S307 -- we validated the AST above
             compile(tree, "<string>", "eval"),
             {"__builtins__": {}},
             _SAFE_NAMES,
