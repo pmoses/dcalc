@@ -1,0 +1,2 @@
+python-fasthtml>=0.13.0
+datastar-py>=0.8.0
